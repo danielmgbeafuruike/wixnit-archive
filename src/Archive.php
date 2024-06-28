@@ -43,9 +43,11 @@
             return $ret;
         }
 
-        public function Search()
+        public function Search(string $term): array
         {
+            $ret = [];
 
+            return $ret;
         }
         public function CreateIntent(string $fileName, bool $isPrivate = false, string $content = null, string $expiry_date = null, string $life_span = null): ?UploadIntent
         {
@@ -54,6 +56,7 @@
             try{
                 $response = $client->request("GET", $this->URI."/v1/upload/init", [
                     "query" => [
+                        "key"=> $this->Key,
                         "file_name" => $fileName,
                         "is_private" => $isPrivate,
                         "content"=> $content,
