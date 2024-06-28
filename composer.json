@@ -1,0 +1,20 @@
+{
+    "name": "wixnit/archive",
+    "description": "Code for manipulating wixnit archive",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Wixnit\\Archive\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "danielmgbeafuruike",
+            "email": "110927006+danielmgbeafuruike@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    }
+}
